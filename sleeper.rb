@@ -13,8 +13,9 @@ class Sleeper < Formula
 
   def caveats; <<~EOS
     To configure Sleeper, run the configuration script in the installation directory:
-    cd #{var.homebrew_prefix}/bin
+    cd $(brew --prefix)/bin
     ./sleeper_config.sh
-  EOS
+    EOS
   end
+
 end
