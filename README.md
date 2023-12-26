@@ -10,9 +10,14 @@ I found that the default settings for turning the display off after idle time ar
 
 The current default is 15 min (900 s) but you will see that you can customize this below.
 
+## Advisory
+
+Please note this is experimental software and an early version at that. You should always do your own research when running scripts. For questions and comments, please open an issue or email me at whomst (at) kevind (dot) xyz
+
 ## Table of Contents
 
 - [Sleeper](#sleeper)
+  - [Advisory](#advisory)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage (must follow)](#usage-must-follow)
@@ -53,12 +58,20 @@ After the installation, you can configure the application through the following 
   ./sleeper_config.sh
   ```
 
-3. Follow the prompts to customize your Sleeper settings, including idle time and other options.
+3. Follow the prompts to customize your Sleeper settings, including idle time and other options. Note the following output regarding the following step.
+   
+4. Once you have completed the config you must add the process to your launch applications to run in the background automatically. Use this and see the notification regarding System Settings:
+
+  ```bash
+  launchctl load -w ~/Library/LaunchAgents/com.{USER_NAME}.sleeper.plist
+  ```
+
+Note: replace {USER_NAME} with the matching input from the config wizard.
 
 ## Customization
 
 Customization
-You can customize Sleeper's behavior later by editing the configuration script or plist file located in the installation directory:
+You can edit Sleeper's behavior later by rerunning the config script or plist file located in the installation directory:
 
 1. Configuration Script:
 
