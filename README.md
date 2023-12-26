@@ -23,10 +23,9 @@ The current default is 15 min (900 s) but you will see that you can customize th
 To install Sleeper, you can use [Homebrew](https://brew.sh/):
 
 1. Tap the repository:
-
-   ```bash
+  ```bash
    brew tap thekidnamedkd/sleeper
-   ```
+  ```
 2. Install the app:
   ```bash
   brew install sleeper
