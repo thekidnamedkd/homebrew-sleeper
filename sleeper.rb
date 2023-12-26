@@ -9,7 +9,6 @@ class Sleeper < Formula
     bin.install "sleeper_loop.sh"
     bin.install "sleeper_execute.scpt"
     libexec.install "sleeper_launch.plist"
-    doc.install "README.md"
   end
 
   def caveats; <<~EOS
