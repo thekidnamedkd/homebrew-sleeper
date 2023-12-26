@@ -5,11 +5,11 @@ class Sleeper < Formula
   sha256 "751c031648920cf397bffb3dedcd3a6524b9aa421e5d20f11349f6e767afc873"
 
   def install
-    bin.install "sleeper_config.sh"
-    bin.install "sleeper_loop.sh"
-    bin.install "sleeper_execute.scpt"
-    libexec.install "sleeper_launch.plist"
-    doc.install "README.md"
+    bin.install "./v.1.0.0/sleeper_config.sh"
+    bin.install "./v.1.0.0/sleeper_loop.sh"
+    bin.install "./v.1.0.0/sleeper_execute.scpt"
+    libexec.install "./v.1.0.0/sleeper_launch.plist"
+    doc.install "./v.1.0.0/README.md"
   end
 
   def caveats; <<~EOS
