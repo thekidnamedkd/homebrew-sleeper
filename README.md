@@ -6,7 +6,12 @@ Sleeper is a macOS utility that helps manage your computer's sleep behavior base
 
 I created this to set my external monitor to sleep while powering a Macbook with Apple silicone via Thunderbolt 4. This monitor worked well with my previous Windows machine and I was tired of leaving my workstation for a period and coming back to find my monitor was still on while my machine was resting.
 
-I found that the default settings for turning the display off after idle time are not enough to let the monitor power down as well, but that manually putting the computer to sleep doees work. So I wrote some scripts to enable that more direct sleep function after inactivity.
+I found that the default settings for turning the display off after idle time are not enough to let the monitor power down as well, but that manually putting the computer to sleep from the menu does work.
+
+<img width="305" alt="image" src="https://github.com/thekidnamedkd/homebrew-sleeper/assets/65736142/1948161a-7cfc-4850-aa2f-e6eed2e431a0">
+
+
+So I wrote some scripts to enable that more direct sleep function after inactivity.
 
 The current default is 15 min (900 s) but you will see that you can customize this below.
 
