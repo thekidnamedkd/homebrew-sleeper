@@ -8,6 +8,7 @@ class Sleeper < Formula
     bin.install "sleeper_config.sh"
     bin.install "sleeper_loop.sh"
     bin.install "sleeper_execute.scpt"
+    inreplace "sleeper_launch.plist", "/path/to/sleeper_loop.sh", "#{bin}/sleeper_loop.sh"
     libexec.install "sleeper_launch.plist"
   end
 
