@@ -8,8 +8,14 @@ class Sleeper < Formula
     bin.install "sleeper_config.sh"
     bin.install "sleeper_loop.sh"
     bin.install "sleeper_execute.scpt"
-    inreplace "sleeper_launch.plist", "/path/to/sleeper_loop.sh", "#{bin}/sleeper_loop.sh"
-    
+
+    begin
+      # Use a relative path for the plist file
+      inreplace "./sleeper_launch.plist", "/path/to/sleeper_loop.sh", "#{bin}/sleeper_loop.sh"
+    rescue Exception => e
+      odie "Inreplace failed: #{e}"
+    end
+
     libexec.install "sleeper_launch.plist"
   end
 
@@ -17,7 +23,6 @@ class Sleeper < Formula
     To configure Sleeper, run the configuration script in the installation directory:
     cd $(brew --prefix)/bin
     ./sleeper_config.sh
-    EOS
+  EOS
   end
-
 end
