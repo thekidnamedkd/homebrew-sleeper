@@ -9,6 +9,9 @@ class Sleeper < Formula
     bin.install "sleeper_loop.sh"
     bin.install "sleeper_execute.scpt"
     libexec.install "sleeper_launch.plist"
+
+    chmod 0755, bin/"sleeper_config.sh"
+    chmod 0755, bin/"sleeper_loop.sh"
   end
 
   def caveats; <<~EOS
