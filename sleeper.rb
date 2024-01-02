@@ -12,9 +12,12 @@ class Sleeper < Formula
   end
 
   def post_install
-    # Set execute permissions after installation
     chmod 0755, bin/"sleeper_config.sh"
     chmod 0755, bin/"sleeper_loop.sh"
+
+    sleeper_loop_path = "#{bin}/sleeper_loop.sh"
+
+    inreplace "#{libexec}/sleeper_launch.plist", "/path/to/sleeper_loop.sh", sleeper_loop_path
   end
 
   def caveats; <<~EOS
