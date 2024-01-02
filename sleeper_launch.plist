@@ -7,7 +7,7 @@
 
     <key>ProgramArguments</key>
     <array>
-        <string>/path/to/auto_sleep.sh</string>
+        <string>/path/to/sleeper_loop.sh</string>
     </array>
 
     <key>RunAtLoad</key>
