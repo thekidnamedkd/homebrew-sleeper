@@ -1,7 +1,7 @@
 class Sleeper < Formula
   desc "A macOS utility for managing computer sleep behavior"
   homepage "https://github.com/thekidnamedkd/homebrew-sleeper"
-  url "https://github.com/thekidnamedkd/homebrew-sleeper/raw/v1.0.7/sleeper-app.tar.gz"
+  url "https://github.com/thekidnamedkd/homebrew-sleeper/raw/v1.0.8/sleeper-app.tar.gz"
   sha256 "0bf16c47c172103a66762f56af9b805330ccf78bc36c5d3a343a1a90e3cb46e7"
 
   def install
